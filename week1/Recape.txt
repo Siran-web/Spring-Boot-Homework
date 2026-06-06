@@ -1,0 +1,92 @@
+-----> 1. Beans <-----
+
+It is an object that it create, manged and store by Spring IoC Cointainer.
+Eg:
+    @Component
+    public class car{
+        int enginePower ,
+        int wheel,
+        int seat,
+        String modelName
+    }
+
+-----> 2. Annotations <-----
+
+It provide metadata that tell Spring how to handle classes and methods.
+Eg:
+    @RestController
+    @Data
+
+-----> 3. Dependency Injection <------
+
+When class has'nt create its own dependency instead of it . It uses another spring dependency is know as
+dependency injection.
+
+Eg:
+    public class Engine{
+
+    }
+
+    public class Car{
+        final Engine engine;
+
+        Car(){
+            this->engine = engine;
+        }
+    }
+
+
+-----> 4. IoC(Inversion of Control) Container <-----
+
+It is core of Spring that manage Spring beans the life cycle.
+
+it has responsibilities of 
+1. Manage Beans life cycle
+2. Create Beans
+3. Manage Beans
+4. Inject Dependency
+
+-----> 5. Maven <------
+
+It is a build and dependencies management tools
+
+it has responsibilities
+1. Download dependencies
+2. Complie code
+3. Run test
+4. Package Configuration
+
+-----> 6. Spring Boot AutoConfiguration <-----
+
+AutoConfiguration configure all the Component based on dependencies that is used in Spring project.
+
+Spring Boot Automativalluy configure
+1. Embeded Server 
+2. Dispatcher Servelet
+3. MVC Configuration
+
+
+-----> 7. Internal Flow of Spring Boot <----
+
+1. Start Application
+
+2. Creater Application Context
+    Spring creates IoC cointainer(Application Context)
+
+3. Component Scanning
+    It scan all the package for dependencies.
+
+4. Create Beans
+    Beans are instanciated and registerd in cointainer.
+
+5. Dependency Injection
+    dependencies are injected using constructor, setter and @Auto-wired
+
+6. AutoConfiguration
+    Spring configure all the component based dependencies that is used in project.
+
+7. Start Embeded Server 
+
+8. Application ready
+
+
