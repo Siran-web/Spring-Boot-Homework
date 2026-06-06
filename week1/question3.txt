@@ -1,0 +1,20 @@
+-----> Make a list of scenarios where you feel Spring Boot can be very useful over Spring Framework. <-----
+
+Spring framework provide java framework through which we can develope enterprisec levele application 
+It provides us
+
+1. Transication Management
+2. Dependency Injection
+3. web Development
+4. Ioc (Inversion of control) container
+5. Database access
+6. Security integeration
+
+where as Spring Boot build top on Spring framework. It easy the work of development process.
+It provide us
+1. Embeded Server(Tomcate Server)
+2. Maven
+3. Auto Configuration
+4. Starter Dependency
+5. Production ready feature
+6. Lesser boiler code
