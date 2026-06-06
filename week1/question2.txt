@@ -1,0 +1,13 @@
+------> Make a list of scenarios where you feel Spring Framework can be very useful over NodeJS. <-----
+
+We use Spring framework where we need to build 
+1. Secure and faster website 
+2. Microservice in larger orginatation
+3. Databse heavy Application
+4. Bancking system and erp system
+5. Complex Logic system
+
+Whereas we use NodeJs where we need 
+1. Real time data fetching as chat app  
+2. Rapid developement
+3. lightweight app
