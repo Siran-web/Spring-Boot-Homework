@@ -1,0 +1,23 @@
+Question:
+Make a list of all the annotations you have learned so far.
+
+@SpringBootApplication
+@EnableAutoConfiguration
+@Configuration
+
+@Beans
+@Component
+@Service
+@Repository
+@Autowired
+
+@Controller
+@RestController
+@RequestMapping
+
+@PostConstruct
+@PreDestroy
+
+@ConditionalOnClass
+@ConditionalOnBeans
+@ConditionOnProperty
