@@ -3,7 +3,7 @@
 It is an object that it create, manged and store by Spring IoC Cointainer.
 Eg:
     @Component
-    public class car{
+    public class car {
         int enginePower ,
         int wheel,
         int seat,
@@ -27,7 +27,7 @@ Eg:
 
     }
 
-    public class Car{
+    public class Car {
         final Engine engine;
 
         Car(){
