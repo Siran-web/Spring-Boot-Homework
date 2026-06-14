@@ -1,0 +1,27 @@
+It is use to express request mapping , request Input, exception handling and more.
+
+@Controller
+@RestController (@Controller + @ ResponseBody)
+
+
+We can use @RequestMapping to map request to controllers method.
+
+Short cuts method od @ResquestMappint
+@GetMapping
+@PostMapping
+@DeleteMapping
+@PutMapping
+@PatchMapping
+
+@PathVariable - When data is essential part for URL path that identifies resourse
+@RequestParams - When data is optional part of URL that is use for filtration, 
+                sorting or other modification.
+
+@RequestBody - It is used to bind HTTP request body with java object.
+
+@Entity - This annotation marked a class as persistance class. that map object with table.
+
+---------> Handling annotations <--------
+@ExceptionHandler - It use to handle exception that occur in controllers.
+@RestControllerAdvices - It is use to handle global exceptions.
+
