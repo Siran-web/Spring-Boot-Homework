@@ -48,3 +48,10 @@ Resposibilities of persistence layer
 4 Save object in database
 5 Retrive data from database
 6 Update and delete data from database
+
+-------> 5 Exception handling in Spring Boot MVC <-------
+It is a mechanisim that handle and catch error that occure during request proscessing, so the application can  return meaningful responce instead of crashing and showing stack trash.
+
+-------> 6 Input Validation Annotation <----------
+It automatically validate user input before reaching business logic layer.
+They are the part of Bean validation API (Jakarta Validation).
