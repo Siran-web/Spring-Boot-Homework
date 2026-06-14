@@ -18,3 +18,33 @@ It is the process of convertion java object into json formate
 -----> Handler Adapter <-----
 It is the bridge between DispatcherServelet and handler(Controller). It allow dispatcherServelet to work 
 with different Controller implementation without being tightly couple them.
+
+
+---------> 2. Presentation Layer <--------
+Presentation layer is the user interface layer that interact with user directly.
+
+Responsibilties  of presentation layer 
+1 It send data to bussiness logic layer
+2 It accept data from user
+3 Display information to user 
+
+-------> 3. Business Logic layer/ Services Layer <--------
+It perform business logic, calculation and apply decision making to user input.
+
+Responsibilities of business logic layer
+1 Do mathematic calculation and processing.
+2 Apply business rules
+3 Enforce decision making policies and rules.
+4 Coordinate dataflow between presentation layer and data access layer.
+5 Validate user input according to business requirements.
+
+-------> 4. Prsistense Layer <--------
+It is responsible for storing, updating, retriveing and deleting data from database.
+
+Resposibilities of persistence layer 
+1 Connect to database
+2 Implements SQL Queries
+3 Hide data specifics details from business layer
+4 Save object in database
+5 Retrive data from database
+6 Update and delete data from database
