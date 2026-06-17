@@ -2,6 +2,7 @@ package com.example.department.controllers;
 
 import com.example.department.dtos.DepartmentDTO;
 import com.example.department.services.DepartmentService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public class DepartmentControllers {
     }
 
     @PostMapping("/")
-    public DepartmentDTO createDepartment(@RequestBody DepartmentDTO departmentDTO) {
+    public DepartmentDTO createDepartment(@Valid @RequestBody DepartmentDTO departmentDTO) {
         return departmentService.createDepartment(departmentDTO);
     }
 
