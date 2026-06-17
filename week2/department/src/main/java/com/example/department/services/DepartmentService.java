@@ -37,7 +37,7 @@ public class DepartmentService {
     public DepartmentDTO getDepartmentById(Long id){
         Boolean flag = isExist(id);
         if(!flag)
-            throw new ResourceNotFoundException(" with id" + id);
+            throw new ResourceNotFoundException(" with id " + id);
 
         Optional<DepartmentEntity> department = departmentRepository.findById(id);
         return modelMapper.map(department, DepartmentDTO.class);
