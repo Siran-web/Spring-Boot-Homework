@@ -1,0 +1,26 @@
+---------> Entity Annotation <---------
+@Entity
+@Table(name = "department")
+@Id
+@GeneratedValue(Strategy = GeneratedType.Identity)
+@Column(Nullable = false)
+@CreationTimestamp  @UpdationTinestamp
+
+---------> Table Annotation <--------
+@Table(
+    name = "employee"
+    schema = "hr"
+    catalog = "employee_catalog"
+    uniqueConstraint = {
+        @uniqueConstraint(columnNames = {"email"})
+    },
+    indexes = {
+        @Index(name = "idx_name", columnList = "name")
+    }
+)
+
+---------> Relational Annotation <------
+@OneToOne
+@OneToMany
+@ManyToOne
+@ManyToMany
